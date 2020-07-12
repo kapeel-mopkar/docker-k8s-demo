@@ -1,15 +1,15 @@
 FROM adoptopenjdk/openjdk8:alpine-jre
 
-COPY target/docker-demo-1.0.jar /opt/docker-demo/
+COPY target/docker-k8s-demo.jar /opt/docker-k8s-demo/
 
 WORKDIR /opt/
 
 RUN mkdir appConfig
 
-WORKDIR /opt/docker-demo/
+WORKDIR /opt/docker-k8s-demo/
 
 RUN mkdir temp
 
-ENTRYPOINT java $JAVA_OPTS -jar ./docker-demo-1.0.jar
+ENTRYPOINT java $JAVA_OPTS -jar ./docker-k8s-demo.jar
 
 EXPOSE 8080
