@@ -1,3 +1,8 @@
+# Pre-requisites
+1. Install Docker
+2. Install Minikube
+3. Spring Boot
+
 # docker-k8s-demo
     docker images (Before)
 
